@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "pythoneda-tenant-application-base"
+version = "0.0.1a1"
+description = "Application layer for pythoneda-tenant/base"
+authors = ["rydnr <github@acm-sl.org>"]
+readme = "README.md"
+homepage = "https://github.com/pythoneda-tenant-application/base"
+packages = [{include = "pythonedatenantapplication"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pythoneda-base = "^0.0.1a14"
+pythoneda-tenant-base = "^0.0.1a1"
+pythoneda-tenant-infrastructure-base = "^0.0.1a1"
+pythoneda-application-base = "^0.0.1a10"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.2.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
